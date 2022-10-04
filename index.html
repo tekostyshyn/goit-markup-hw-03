@@ -18,42 +18,46 @@
 
   <body>
     <header class="header">
-      <!-- logo -->
-      <a href="./index.html" class="link header-logo">
-        <span class="logo-accent">Web</span>Studio
-      </a>
+      <div class="container">
+        <!-- logo -->
+        <a href="./index.html" class="link header-logo">
+          <span class="logo-accent">Web</span>Studio
+        </a>
 
-      <!-- site navigation -->
-      <nav>
-        <ul class="site-nav list">
-          <li>
-            <a href="./index.html" class="site-nav-link link current">Студія</a>
+        <!-- site navigation -->
+        <nav class="site-nav-main">
+          <ul class="site-nav list">
+            <li class="site-nav-item">
+              <a href="./index.html" class="site-nav-link link current">Студія</a>
+            </li>
+            <li class="site-nav-item">
+              <a href="./portfolio.html" class="site-nav-link link">Портфоліо</a>
+            </li>
+            <li class="site-nav-item">
+              <a href="" class="site-nav-link link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- contacts -->
+        <ul class="contacts list">
+          <li class="contacts-item">
+            <a href="mailto:info@devstudio.com" class="contacts-link link">info@devstudio.com</a>
           </li>
-          <li>
-            <a href="./portfolio.html" class="site-nav-link link">Портфоліо</a>
-          </li>
-          <li>
-            <a href="" class="site-nav-link link">Контакти</a>
+          <li class="contacts-item">
+            <a href="tel:+380961111111" class="contacts-link link">+38 096 111 11 11</a>
           </li>
         </ul>
-      </nav>
-
-      <!-- contacts -->
-      <ul class="contacts list">
-        <li>
-          <a href="mailto:info@devstudio.com" class="contacts-link link">info@devstudio.com</a>
-        </li>
-        <li>
-          <a href="tel:+380961111111" class="contacts-link link">+38 096 111 11 11</a>
-        </li>
-      </ul>
+      </div>
     </header>
 
     <main>
       <!-- hero -->
       <section class="hero">
-        <h1 class="title-hero">Ефективні рішення для вашого бізнесу</h1>
-        <button class="button hero-button">Замовити послугу</button>
+        <div class="container">
+          <h1 class="title-hero">Ефективні рішення для вашого бізнесу</h1>
+          <button class="button hero-button">Замовити послугу</button>
+        </div>
       </section>
 
       <!-- features -->

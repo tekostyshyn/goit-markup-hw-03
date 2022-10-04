@@ -24,7 +24,8 @@ h5,
 h6,
 p,
 ul {
-  margin-top: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .list {
@@ -59,8 +60,23 @@ ul {
   margin: -1px;
 }
 
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* logo header */
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
 .header-logo {
+  margin-top: 24px;
+  margin-bottom: 25px;
+  margin-right: 93px;
   color: var(--logo-color);
 
   font-family: Raleway;
@@ -75,6 +91,21 @@ ul {
 }
 
 /*  navigation header */
+
+.site-nav {
+  display: flex;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.site-nav-item {
+  margin-right: 50px;
+}
+
+.site-nav-item:last-child {
+  margin-right: 0px;
+}
+
 .site-nav-link {
   color: var(--primary-color);
 
@@ -94,6 +125,22 @@ ul {
 }
 
 /* contacts header */
+
+.contacts {
+  display: flex;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-left: auto;
+}
+
+.contacts-item {
+  margin-right: 50px;
+}
+
+.contacts-item:last-child {
+  margin-right: 0;
+}
+
 .contacts-link {
   color: var(--secondary-color);
 
@@ -111,9 +158,11 @@ ul {
 /* hero */
 .hero {
   background-color: var(--bgd-color-accent);
+  text-align: center;
 }
 
 .title-hero {
+  padding-top: 200px;
   color: var(--primary-white-color);
 
   text-transform: uppercase;
@@ -124,6 +173,9 @@ ul {
 }
 
 .hero-button {
+  margin-top: 30px;
+  margin-bottom: 200px;
+  padding: 10px 32px;
   background-color: var(--accent-color);
   color: var(--primary-white-color);
 
@@ -132,6 +184,8 @@ ul {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
+  border: 0;
+  border-radius: 4px;
 }
 
 .hero-button:hover,
