@@ -40,6 +40,11 @@ ul {
   cursor: pointer;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .title-section {
   font-weight: 700;
   font-size: 36px;
@@ -64,9 +69,15 @@ ul {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* logo header */
+
+.header {
+    border-bottom: 1px solid #ECECEC;
+}
 
 .header .container {
   display: flex;
@@ -163,6 +174,8 @@ ul {
 
 .title-hero {
   padding-top: 200px;
+  margin-left: 452px;
+  margin-right: 452px;
   color: var(--primary-white-color);
 
   text-transform: uppercase;
@@ -196,7 +209,20 @@ ul {
 
 /* section features */
 
+.features-list {
+  display: flex;
+}
+
+.features-item {
+  margin-right: 30px;
+}
+
+.features-item:last-child {
+  margin-right: 0;
+}
+
 .features-subtitle {
+  margin-bottom: 10px;
   color: var(--primary-color);
   text-transform: uppercase;
 
@@ -214,16 +240,52 @@ ul {
   letter-spacing: 0.03em;
 }
 
+/* section works */
+.works {
+  padding-top: 0;
+  text-align: center;
+}
+
+.works-list {
+  display: flex;
+  margin-top: 50px;
+}
+
+.works-list-item {
+  margin-right: 30px;
+}
+
+.works-list-item:last-child {
+  margin-right: 0;
+}
+
 /* section team */
 .team {
   background-color: var(--bgd-color-section);
+
+  text-align: center;
 }
 
 .team-card {
   background-color: var(--primary-white-color);
 }
 
+.team-cards-list {
+  display: flex;
+  margin-top: 50px;
+}
+
+.team-card {
+  margin-right: 30px;
+}
+
+.team-card:last-child {
+  margin-right: 0;
+}
+
 .team-subtitle {
+  margin-top: 30px;
+
   color: var(--primary-color);
 
   font-weight: 500;
@@ -233,6 +295,9 @@ ul {
 }
 
 .team-description {
+  margin-top: 10px;
+  margin-bottom: 30px;
+
   color: var(--secondary-color);
 
   font-size: 16px;
