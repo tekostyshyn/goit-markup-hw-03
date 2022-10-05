@@ -76,7 +76,7 @@ ul {
 /* logo header */
 
 .header {
-    border-bottom: 1px solid #ECECEC;
+  border-bottom: 1px solid #ececec;
 }
 
 .header .container {
@@ -85,8 +85,8 @@ ul {
 }
 
 .header-logo {
-  margin-top: 24px;
-  margin-bottom: 25px;
+  padding-top: 24px;
+  padding-bottom: 25px;
   margin-right: 93px;
   color: var(--logo-color);
 
@@ -105,8 +105,8 @@ ul {
 
 .site-nav {
   display: flex;
-  margin-top: 32px;
-  margin-bottom: 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .site-nav-item {
@@ -139,8 +139,8 @@ ul {
 
 .contacts {
   display: flex;
-  margin-top: 32px;
-  margin-bottom: 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   margin-left: auto;
 }
 
@@ -266,10 +266,6 @@ ul {
   text-align: center;
 }
 
-.team-card {
-  background-color: var(--primary-white-color);
-}
-
 .team-cards-list {
   display: flex;
   margin-top: 50px;
@@ -277,6 +273,8 @@ ul {
 
 .team-card {
   margin-right: 30px;
+
+  background-color: var(--primary-white-color);
 }
 
 .team-card:last-child {
@@ -296,7 +294,7 @@ ul {
 
 .team-description {
   margin-top: 10px;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 
   color: var(--secondary-color);
 
@@ -307,6 +305,8 @@ ul {
 
 /* footer */
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--bgd-color-accent);
 }
 
@@ -323,9 +323,13 @@ ul {
 
 /* footer address */
 address {
+  margin-top: 20px;
   font-style: normal;
 }
 
+.address-item {
+  margin-top: 9px;
+}
 .address-map {
   color: var(--primary-white-color);
 
@@ -354,7 +358,22 @@ address {
 
 /*  section portfolio */
 
-.portfolio-button {
+.filter {
+  display: flex;
+  justify-content: center;
+}
+
+.filter-item {
+  margin-right: 8px;
+}
+
+.filter-item:last-child {
+  margin-right: 0;
+}
+
+.portfolio-button: {
+  padding: 6px 22px;
+
   color: var(--primary-color);
 
   font-family: inherit;
@@ -364,17 +383,38 @@ address {
   letter-spacing: 0.03em;
 }
 
+.portfolio-button:first-child {
+  padding: 6px 25px;
+}
+
 .portfolio-button:hover,
 .portfolio-button:focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
 }
 
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-left: -30px;
+  margin-bottom: -30px;
+}
+
 .portfolio-card {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-bottom: 30px;
+
   background-color: var(--primary-white-color);
+  border: solid 1px #EEEEEE;
 }
 
 .portfolio-subtitle {
+  margin-top: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+
   color: var(--primary-color);
 
   font-weight: 700;
@@ -384,8 +424,12 @@ address {
 }
 
 .portfolio-description {
-  color: var(--secondary-color);
+  margin-top: 4px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 20px;
 
+  color: var(--secondary-color);
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
