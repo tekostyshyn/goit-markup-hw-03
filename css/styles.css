@@ -176,15 +176,17 @@ img {
 
 /* hero */
 .hero {
+  padding: 200px 0px;
+
   background-color: var(--bgd-color-accent);
   text-align: center;
 }
 
-.hero-container {
-  padding: 200px 452px; 
-}
-
 .title-hero {
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+  
   color: var(--primary-white-color);
 
   text-transform: uppercase;
@@ -245,7 +247,7 @@ img {
   color: var(--secondary-color);
 
   font-size: 14px;
-  line-height: 1.17;
+  line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
@@ -427,7 +429,9 @@ address {
 
 .portfolio-container {
   padding: 20px 24px;
-  border: solid 1px #EEEEEE;
+  border-left: solid 1px #EEEEEE;
+  border-right: solid 1px #EEEEEE;
+  border-bottom: solid 1px #EEEEEE;
 }
 
 .portfolio-subtitle {
